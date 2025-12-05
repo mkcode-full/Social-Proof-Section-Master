@@ -44,7 +44,7 @@ body {
 }
 
 .content-title {
-    font-size: 48px;
+    font-size: 56px;
     color: var(--very-dark-magenta);
     font-weight: var(--fw-bold);
     margin-bottom: 20px;
@@ -78,11 +78,13 @@ body {
 
 .rated-reviews {
     margin-top: 30px;
-    margin-right: 60px;
+    position: relative;
+    transform: translateX(-30px);
 }
 
 .rated-besttech {
-    margin-left: 60px;
+    position: relative;
+    transform: translateX(30px);
 }
 
 .rated-text {
@@ -94,3 +96,124 @@ body {
 .icon-img {
     width: 13px;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: var(--very-dark-magenta)
+    
+}
+
+.card-colton {
+    position: relative;
+    transform: translateY(-20px);
+}
+
+.card-anne {
+    position: relative;
+    transform: translateY(20px);
+}
+
+
+.profile-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+.card-profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.profile-name {
+    color: var(--white);
+    font-weight: var(--fw-bold);
+    font-size: 15px;
+}
+
+
+.profile-info span {
+    color: var(--soft-pink);
+    font-size: 15px;
+    font-weight: var(--fw-regular);
+}
+
+.card-text {
+    font-size: 15px;
+    color: var(--white);
+    line-height: 1.5;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 70px;
+    gap: 20px;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .card-wrapper {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    
+    .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+ 
+    .content-title {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .rated-wrapper {
+    width: 100%;
+    gap: 10px;
+
+     }
+     
+     .content {
+        width: 100%;
+        text-align: center;
+     }
+    
+    
+     .rated-besttech {
+        transform: none;
+     }
+     .rated-reviews {
+        transform: none;
+     }
+
+
+}
+
+
+
+
+
+
