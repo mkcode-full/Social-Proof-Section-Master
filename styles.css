@@ -32,7 +32,7 @@ body {
     padding: 60px 20px;
 }
 
-.content-wrapper {
+.hero {
     display: flex;
     justify-content: space-between;
     gap: 60px;
@@ -64,7 +64,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    
+
 }
 
 .rated {
@@ -105,7 +105,6 @@ body {
     padding: 30px;
     border-radius: 10px;
     background-color: var(--very-dark-magenta)
-    
 }
 
 .card-colton {
@@ -157,7 +156,7 @@ body {
     line-height: 1.5;
 }
 
-.card-wrapper {
+.testimonials{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 70px;
@@ -168,52 +167,81 @@ body {
 @media (max-width: 768px) {
 
     .container {
-        display: grid;
-        grid-template-columns: 1fr;
+        padding: 40px 5px;
+
     }
-    
-    .card-wrapper {
-        grid-template-columns: 1fr;
-        gap: 5px;
+
+    .card-colton,
+    .card-anne {
+        transform: none;
     }
+
+    .rated {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 12px 25px;
+        /* 80px yerine bu */
+        max-width: 300px;
+        
     
-    .content-wrapper {
+    }
+
+    .testimonials {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        gap: 12px;
+        margin-top: 40px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
         gap: 10px;
     }
- 
+
     .content-title {
         font-size: 42px;
         margin-bottom: 15px;
     }
 
-    .rated-wrapper {
-    width: 100%;
-    gap: 10px;
+    .content-text {
+        text-align: center;
+    }
 
-     }
-     
-     .content {
+    .rated-wrapper {
+        width: 100%;
+        gap: 10px;
+
+    }
+
+    .content {
         width: 100%;
         text-align: center;
-     }
-    
-    
-     .rated-besttech {
+    }
+
+
+    .rated-besttech {
         transform: none;
-     }
-     .rated-reviews {
+    }
+
+    .rated-reviews {
         transform: none;
-     }
+    }
+
+    .card {
+        max-width: 300px;
+        padding: 30px;
+        border-radius: 5px;
+
+    }
+
+
+
+
 
 
 }
-
-
-
-
-
-
