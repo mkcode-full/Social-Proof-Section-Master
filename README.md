@@ -33,10 +33,10 @@ The goal of the project is to build a fully responsive landing section using **s
 ## 🔗 Live Demo
 
 👉 **Live Site URL:**  
-*(Netlify/GitHub Pages link buraya)*
+*(GitHub Pages (https://mkcode-full.github.io/Social-Proof-Section-Master/))*
 
 👉 **Solution Page:**  
-*(FrontendMentor linkini buraya ekle)*
+*(FrontendMentor https://www.frontendmentor.io/solutions/responsive-social-proof-section-p6fkSIflAm)*
 
 ---
 
